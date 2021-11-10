@@ -1,5 +1,5 @@
 import pygame
-import objects
+import items
 import userio
 
 
@@ -11,9 +11,9 @@ class Game:
         self.window_size = window_size
         self.grid_dimensions = grid_dimensions
         self.clock = pygame.time.Clock()
-        self.peter = objects.Snake(length=3)
+        self.peter = items.Snake(length=3)
         self.run = True
-        self.current_snack = objects.Snack(self.peter, grid_dimensions)
+        self.current_snack = items.Snack(self.peter, grid_dimensions)
         self.my_renderer = userio.Renderer(window_size, grid_dimensions)
         self.game_speed = 5
         self.level = 0
