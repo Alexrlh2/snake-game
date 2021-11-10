@@ -17,7 +17,7 @@ class Game:
         self.my_renderer = userio.Renderer(window_size, grid_dimensions)
         self.game_speed = 5
         self.level = 0
-        # perhaps it is not normal and proper to require so many 'self's
+        # perhaps it is not normal and proper to require so many 'self's?
 
     def game_loop(self):
         """runs the central game-loop"""
